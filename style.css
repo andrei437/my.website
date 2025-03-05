@@ -1,0 +1,104 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #ffcc00;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+/* City List */
+.city-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.city-card {
+    background-color: #444;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffcc00;
+    font-size: 1.2rem;
+}
+
+.city-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.3);
+}
+
+.city-card a {
+    text-decoration: none;
+    color: black; /* Linkuri negre */
+}
+
+.city-card h3 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+/* Modificarea linkului de "Înapoi" */
+.back-link {
+    color: black; /* Linkul "Înapoi" va fi negru */
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+/* Imaginea jos pe pagină */
+.city-image {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .city-list {
+        grid-template-columns: 1fr;
+    }
+
+    .city-card {
+        padding: 15px;
+    }
+}
